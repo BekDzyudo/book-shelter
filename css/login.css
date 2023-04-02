@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  padding: 0px;
+  margin: 0;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/kutubxona.jpg);
+}
+.container .block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 400px;
+}
+.container .block .logo_image {
+  width: 70%;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.container .block #loginForm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.container .block #loginForm input {
+  height: 40px;
+  border: 1px solid white;
+  outline: none;
+  border-radius: 5px;
+  padding: 0px 5px;
+  background: none;
+  color: white;
+}
+.container .block #loginForm a {
+  height: 40px;
+  border: 1px solid white;
+  outline: none;
+  border-radius: 5px;
+  background: none;
+  color: white;
+}
+
+.container .block #loginForm #loginBtn {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0d75ff;
+  cursor: pointer;
+}
+.container .block #loginForm #loginBtn:hover {
+  background: #d8d6d6;
+}
+.container .block #loginForm input::placeholder {
+  color: white;
+}
