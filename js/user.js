@@ -5,6 +5,10 @@ let searchArr = [];
 let resultSoni = document.getElementById("resultSoni");
 let bookmarkShow = document.querySelector(".bookmarkShow");
 
+document.getElementById("logout").onclick = function () {
+  window.location.replace("../login.html");
+};
+
 function getAllBooks() {
   fetch("https://book-shelter-60a65-default-rtdb.firebaseio.com/books.json")
     .then((res) => {
